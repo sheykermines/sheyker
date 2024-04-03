@@ -14,7 +14,7 @@ document.getElementById('flipButton').addEventListener('click', async function()
   loading.style.display = 'block';
   
   await new Promise(resolve => setTimeout(resolve, 2000));
-  const randomPhotoNumber = Math.floor(Math.random() * 50) + 1;
+  const randomPhotoNumber = Math.floor(Math.random() * 77) + 1;
   photoContainer.style.backgroundImage = `url('photos/${randomPhotoNumber}.png')`;
   photoContainer.style.display = 'block';
   loading.style.display = 'none';
